@@ -10,9 +10,9 @@ mkdirs('Results')
 mkdirs('Results/Tables')
 mkdirs('Results/Figures')
 
-data_5 <- read.delim('Data/GSE99353_5months_cortex_raw_counts.txt')
+data_5 <- read.delim('Data/GSE99353_5months_cortex_raw_counts.txt', sep='')
 exp_matrix_5 <- data_5[,c(7,14:19, 26:33)]
-data_20 <- read.delim('Data/GSE112575_20months_cortex_raw_counts.txt')
+data_20 <- read.delim('Data/GSE112575_20months_cortex_raw_counts.txt', sep='')
 exp_matrix_20 <- data_20[,c(7,14:21, 32:41)]
 exp_matrix <- merge(exp_matrix_5, exp_matrix_20, by='Feature')
 exp_matrix <- as.matrix(exp_matrix)
