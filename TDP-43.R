@@ -3,8 +3,6 @@ library(edgeR)
 library(dplyr)
 library(R.utils)
 library(EWCE)
-library(reshape2)
-library(ggplot2)
 
 mkdirs('Results')
 mkdirs('Results/Tables')
